@@ -8,14 +8,26 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "Bodo Amat";
+  src: url(../fonts/BodoAmat-BWnd8.ttf);
+}
+
+@font-face {
+  font-family: "Lets Coffee";
+  src: url(../fonts/LetsCoffee-Wy2K4.ttf);
+}
+
 .container {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  /* background: linear-gradient(-90deg, #f6c0c0, #bff5c3); */
-  background-image: url(../img/fundo.jpg);
+  /* background: linear-gradient(-45deg, #f6c0c0, #bff5c3); */
+  background-color: #f6c0c0;
+
+  /* background-image: url(../img/fundo.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 /* NAV-BAR */
@@ -32,7 +44,6 @@ nav {
 }
 
 /* BOTÃO MENU */
-
 #menu-burguer {
   position: absolute;
   opacity: 0;
@@ -52,7 +63,7 @@ label span {
   height: 4px;
   width: 100%;
   border-radius: 30px;
-  background: #f16234;
+  background: #cca3cf;
   transition: 0.25s ease-in-out;
 }
 
@@ -82,21 +93,20 @@ label span:nth-child(3) {
   top: 8px;
 }
 /* END BOTÃO MENU */
-/* OPÇÕES DO MENU */
 
-/* OPÇÃO Nº1 */
+/* OPÇÕES DO MENU */
 .menu-option {
   position: absolute;
   top: 60px;
   left: 0;
   padding: 20px;
-  background-color: #f6c0c0;
+  /* background-color: #bbe0bd; */
+  background: linear-gradient(55deg, #f6c0c0, #bff5c3);
   width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   transform: translateX(100%);
-  /* display: none; */
   transition: 0.3s ease-in;
 }
 
@@ -104,40 +114,189 @@ label span:nth-child(3) {
   transform: translateX(0);
 }
 
+a {
+  text-decoration: none;
+  color: #c85cf3;
+}
+
 .option {
   width: 100%;
   text-align: center;
   padding: 10px 0px;
-  color: #fff;
-  border-bottom: 1px solid #fff;
-  border-right: 1px solid #fff;
-  border-left: 1px solid #fff;
+  border-bottom: 1px solid #c85cf3;
+  border-right: 1px solid #c85cf3;
+  border-left: 1px solid #c85cf3;
+  border-radius: 5px;
 }
 .option:first-child {
-  border-top: 1px solid #fff;
+  border-top: 1px solid #c85cf3;
 }
 
 #btn {
   margin: 80px;
 }
+/* END NAV-BAR */
 
-/* OPÇÃO Nº2 */
-/* .menu-option {
-  position: absolute;
-  top: 60px;
-  right: 0;
-  padding: 20px;
-  background-color: #f6c0c0;
-  width: 70vw;
+.main {
+  padding: 70px 5vw;
+  height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
 }
-.option {
-  width: 100%;
-  text-align: center;
-  color: #fff;
-} */
 
-/* END NAV-BAR */
+/* TITULO-LOGO */
+.logo {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lets Coffee", sans-serif;
+}
+
+.title-unicolors {
+  display: flex;
+  font-size: 45px;
+  letter-spacing: 0.5px;
+  text-shadow: 0px 0px 5px white;
+}
+
+.title-unicolors span:nth-child(1) {
+  color: #e64747;
+}
+
+.title-unicolors span:nth-child(2) {
+  color: #f5903e;
+}
+
+.title-unicolors span:nth-child(3) {
+  color: #e2d133;
+}
+
+.title-unicolors span:nth-child(4) {
+  color: #6bc97f;
+}
+
+.title-unicolors span:nth-child(5) {
+  color: #60b8f3;
+}
+
+.title-unicolors span:nth-child(6) {
+  color: #494cf3;
+}
+
+.title-unicolors span:nth-child(7) {
+  color: #c85cf3;
+}
+
+.title-unicolors span:nth-child(8) {
+  color: #f552da;
+}
+
+.title-unicolors span:nth-child(9) {
+  color: #ee5c74;
+}
+
+.title-arts {
+  font-size: 36px;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0px 0px 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-unic {
+  max-width: 100%;
+  width: 100px;
+}
+/* END TITULO-LOGO */
+
+/* SEÇÃO - PRODUTOS */
+.section-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+  gap: 20px;
+}
+
+.section-name {
+  font-size: 35px;
+  font-family: "Bodo Amat", sans-serif;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  text-shadow: 0 0 10px black;
+  color: white;
+  padding: 1px 5px;
+}
+
+/* CARD */
+.card-product {
+  width: 230px;
+  max-width: 100%;
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.box-img-card {
+  width: 100%;
+  height: 150px;
+  background-color: #ecc1f0;
+  border-radius: 10px;
+}
+
+.box-content-card {
+  /* background-color: rgb(241, 205, 85); */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product-name {
+  text-align: center;
+  padding-bottom: 2px;
+  border-bottom: 1px solid white;
+  text-shadow: 1px 1px rgb(0, 0, 0);
+  font-size: 25px;
+  color: #bff5c3;
+}
+
+.product-value p {
+  display: inline;
+  border-bottom: 2px solid white;
+  padding: 2px 10px;
+  color: white;
+  font-size: 20px;
+  text-shadow: 0.5px 0.5px rgb(0, 0, 0);
+}
+
+.product-value p::before {
+  content: "R$ ";
+  font-weight: bold;
+}
+
+.product-description {
+  /* letter-spacing: 1px; */
+  text-align: justify;
+  font-size: 18px;
+  color: rgb(71, 75, 73);
+  /* word-spacing: 5px; */
+}
+
+/* END CARD */
+/* END SEÇÃO - PRODUTOS */
