@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -22,12 +26,7 @@ body {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  /* background: linear-gradient(-45deg, #f6c0c0, #bff5c3); */
   background-color: #f6c0c0;
-
-  /* background-image: url(../img/fundo.jpg);
-  background-size: cover;
-  background-repeat: no-repeat; */
 }
 
 /* NAV-BAR */
@@ -100,7 +99,6 @@ label span:nth-child(3) {
   top: 60px;
   left: 0;
   padding: 20px;
-  /* background-color: #bbe0bd; */
   background: linear-gradient(55deg, #f6c0c0, #bff5c3);
   width: 100vw;
   display: flex;
@@ -108,28 +106,26 @@ label span:nth-child(3) {
   align-items: center;
   transform: translateX(100%);
   transition: 0.3s ease-in;
+  gap: 10px;
 }
 
 .menu-option.active {
   transform: translateX(0);
 }
 
-a {
+.link-menu {
   text-decoration: none;
   color: #c85cf3;
+  width: 100%;
 }
 
 .option {
   width: 100%;
   text-align: center;
   padding: 10px 0px;
-  border-bottom: 1px solid #c85cf3;
-  border-right: 1px solid #c85cf3;
-  border-left: 1px solid #c85cf3;
+  border: 1px solid #c85cf3;
   border-radius: 5px;
-}
-.option:first-child {
-  border-top: 1px solid #c85cf3;
+  font-size: 20px;
 }
 
 #btn {
@@ -144,6 +140,13 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.icon-zap {
+  width: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 /* TITULO-LOGO */
@@ -206,9 +209,9 @@ h1 {
 }
 
 .title-arts {
-  font-size: 36px;
+  font-size: 32px;
   letter-spacing: 1px;
-  color: #fff;
+  color: rgb(255, 255, 255);
   text-shadow: 0px 0px 5px black;
   display: flex;
   justify-content: center;
@@ -226,8 +229,9 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 10px;
+  padding: 65px 10px;
   gap: 20px;
+  max-width: 100%;
 }
 
 .section-name {
@@ -242,7 +246,7 @@ h1 {
 
 /* CARD */
 .card-product {
-  width: 230px;
+  width: 250px;
   max-width: 100%;
   border: 3px solid white;
   border-radius: 10px;
@@ -261,7 +265,6 @@ h1 {
 }
 
 .box-content-card {
-  /* background-color: rgb(241, 205, 85); */
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -276,26 +279,10 @@ h1 {
   color: #bff5c3;
 }
 
-.product-value p {
-  display: inline;
-  border-bottom: 2px solid white;
-  padding: 2px 10px;
-  color: white;
-  font-size: 20px;
-  text-shadow: 0.5px 0.5px rgb(0, 0, 0);
-}
-
-.product-value p::before {
-  content: "R$ ";
-  font-weight: bold;
-}
-
 .product-description {
-  /* letter-spacing: 1px; */
   text-align: justify;
   font-size: 18px;
   color: rgb(71, 75, 73);
-  /* word-spacing: 5px; */
 }
 
 /* END CARD */

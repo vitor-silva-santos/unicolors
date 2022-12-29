@@ -12,3 +12,8 @@ main.addEventListener("click", () => {
     checkMenu.checked = false;
   }
 });
+
+menu.addEventListener("click", () => {
+  menu.classList.remove("active");
+  checkMenu.checked = false;
+});

@@ -26,15 +26,20 @@
           </div>
 
           <div class="menu-option">
-            <div class="option"><a href="#inicio">Inicio</a></div>
-            <div class="option"><a href="">Produtos</a></div>
-            <div class="option"><a href="">Sobre Nós</a></div>
-            <div class="option"><a href="">Contatos</a></div>
+            <a href="#inicio" class="link-menu">
+              <div class="option">Inicio</div>
+            </a>
+            <a href="#produtos" class="link-menu">
+              <div class="option">Produtos</div>
+            </a>
+            <a href="" class="link-menu"><div class="option">Sobre Nós</div></a>
+            <a href="" class="link-menu"><div class="option">Contatos</div></a>
           </div>
         </nav>
       </header>
 
       <main class="main" id="inicio">
+        <!-- LOGO -->
         <div class="logo">
           <h1>
             <div class="title-unicolors">
@@ -67,25 +72,45 @@
             </div>
           </h1>
         </div>
-        <section class="section-product">
-          <h2 class="section-name">Produtos</h2>
+        <!-- END LOGO -->
 
+        <!-- ICON ZAP -->
+        <a
+          href="http://api.whatsapp.com/send?1=pt_BR&phone=5511939298239"
+          target="_blank"
+        >
+          <img class="icon-zap" src="./assets/img/icon/whatsapp.png" alt="" />
+        </a>
+        <!-- ICON ZAP -->
+
+        <!-- SEÇÃO - PRODUTOS -->
+        <section class="section-product" id="produtos">
+          <h2 class="section-name">Produtos</h2>
+          <!-- CARD - LAGRIMA DE ALEGRIA -->
           <div class="card-product">
             <div class="box-img-card"></div>
             <div class="box-content-card">
               <h3 class="product-name">Lágrimas de Alegria</h3>
-              <div class="product-value">
-                <p>5,00</p>
-              </div>
               <p class="product-description">
                 As “Lágrimas de Alegria” são para que seus convidados possam
                 chorar e se emocionar a vontade.
               </p>
             </div>
           </div>
-        </section>
 
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <!-- CARD - SACHÊS AROMATIZANTES -->
+          <div class="card-product">
+            <div class="box-img-card"></div>
+            <div class="box-content-card">
+              <h3 class="product-name">Sachês Aromatizantes</h3>
+              <p class="product-description">
+                Sachês aromatizantes são feitos de tecido em que são colocados
+                os ingredientes específicos para perfumar espações e ambientes.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- END SEÇÃO - PRODUTOS -->
       </main>
     </div>
 
